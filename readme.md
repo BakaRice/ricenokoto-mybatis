@@ -1,4 +1,4 @@
-# ricenokoto-mybatis(リスのこと)
+# ricenokoto-mybatis(ライスのこと)
 个人博客系统（SpringBoot+Mybatis）
 博客地址：
 
@@ -182,3 +182,8 @@ create table t_blog
 
 
 ```
+
+
+### 遇到问题记录
+
+1. SpringBoot 2.3 以后 数据校验需要单独引入依赖
