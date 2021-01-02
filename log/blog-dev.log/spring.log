@@ -1,0 +1,32 @@
+2021-01-02 13:21:31.977  INFO 7608 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : Starting RicenokotoMybatisApplication using Java 11 on DESKTOP-3JRR0TS with PID 7608 (E:\Learning-SpringBoot\ricenokoto-mybatis\target\classes started by DELL in E:\Learning-SpringBoot\ricenokoto-mybatis)
+2021-01-02 13:21:31.982 DEBUG 7608 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-02 13:21:31.992  INFO 7608 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : No active profile set, falling back to default profiles: default
+2021-01-02 13:21:32.102  INFO 7608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-02 13:21:32.104  INFO 7608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-02 13:21:32.939  WARN 7608 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ricemarch.ricenokotomybatis]' package. Please check your configuration.
+2021-01-02 13:21:33.556  INFO 7608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-02 13:21:33.565  INFO 7608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-02 13:21:33.566  INFO 7608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-02 13:21:33.669  INFO 7608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-02 13:21:33.670  INFO 7608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1563 ms
+2021-01-02 13:21:33.908  INFO 7608 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-02 13:21:34.056  WARN 7608 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-01-02 13:21:34.340  INFO 7608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-02 13:21:34.379  INFO 7608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-02 13:21:34.393  INFO 7608 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : Started RicenokotoMybatisApplication in 3.28 seconds (JVM running for 7.322)
+2021-01-02 13:23:38.617  INFO 10552 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : Starting RicenokotoMybatisApplication using Java 11 on DESKTOP-3JRR0TS with PID 10552 (E:\Learning-SpringBoot\ricenokoto-mybatis\target\classes started by DELL in E:\Learning-SpringBoot\ricenokoto-mybatis)
+2021-01-02 13:23:38.621 DEBUG 10552 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-02 13:23:38.621  INFO 10552 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : No active profile set, falling back to default profiles: default
+2021-01-02 13:23:38.781  INFO 10552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-02 13:23:38.783  INFO 10552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-02 13:23:39.982  WARN 10552 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ricemarch.ricenokotomybatis]' package. Please check your configuration.
+2021-01-02 13:23:40.376  INFO 10552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-02 13:23:40.385  INFO 10552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-02 13:23:40.386  INFO 10552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-02 13:23:40.502  INFO 10552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-02 13:23:40.503  INFO 10552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1719 ms
+2021-01-02 13:23:40.666  INFO 10552 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-02 13:23:40.802  WARN 10552 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-01-02 13:23:41.146  INFO 10552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-02 13:23:41.192  INFO 10552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-02 13:23:41.212  INFO 10552 --- [restartedMain] c.r.r.RicenokotoMybatisApplication       : Started RicenokotoMybatisApplication in 4.242 seconds (JVM running for 7.094)
