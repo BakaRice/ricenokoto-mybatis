@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Logger;
 
 /**
@@ -103,21 +104,21 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public Integer getBlogTotal() {
-        return blogDao.getBlogTotal();
+        return Optional.ofNullable(blogDao.getBlogTotal()).orElse(0);
     }
 
     @Override
     public Integer getBlogViewTotal() {
-        return blogDao.getBlogViewTotal();
+        return Optional.ofNullable(blogDao.getBlogViewTotal()).orElse(0);
     }
 
     @Override
     public Integer getBlogCommentTotal() {
-        return blogDao.getBlogCommentTotal();
+        return Optional.ofNullable(blogDao.getBlogCommentTotal()).orElse(0);
     }
 
     @Override
     public Integer getBlogMessageTotal() {
-        return blogDao.getBlogMessageTotal();
+        return Optional.ofNullable(blogDao.getBlogMessageTotal()).orElse(0);
     }
 }

@@ -187,3 +187,5 @@ create table t_blog
 ### 遇到问题记录
 
 1. SpringBoot 2.3 以后 数据校验需要单独引入依赖
+2. `org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)`
+：[解决方案](https://blog.csdn.net/sundacheng1989/article/details/81630370)

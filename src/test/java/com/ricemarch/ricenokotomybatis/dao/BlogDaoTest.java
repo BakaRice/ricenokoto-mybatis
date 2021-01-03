@@ -78,4 +78,8 @@ class BlogDaoTest {
         List<FirstPageBlog> firstPageBlog = blogDao.getFirstPageBlog();
         System.out.println(firstPageBlog.toString());
     }
+
+    @Test
+    void getBlogViewTotal() {
+    }
 }
