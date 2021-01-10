@@ -189,3 +189,4 @@ create table t_blog
 1. SpringBoot 2.3 以后 数据校验需要单独引入依赖
 2. `org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)`
 ：[解决方案](https://blog.csdn.net/sundacheng1989/article/details/81630370)
+3. 发现Junit单元测试时，各Test方法之间不能直接使用成员变量进行共享，需要标注为static的类变量
