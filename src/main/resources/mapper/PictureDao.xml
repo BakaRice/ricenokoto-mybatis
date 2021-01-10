@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ricemarch.ricenokotomybatis.dao.PictureDao">
+
+    <!--    list all the pictures   -->
+    <select id="listPicture" resultType="com.ricemarch.ricenokotomybatis.entity.Picture">
+        select ID, PICTUREADDRESS, PICTUREDESCRIPTION, PICTURENAME, PICTURETIME
+        from ricenokoto_mybatis.t_picture
+    </select>
+
+    <!--    save a new picture   -->
+    <insert id="savePicture" parameterType="com.ricemarch.ricenokotomybatis.entity.Picture">
+        insert into ricenokoto_mybatis.t_picture(picturename, picturetime, pictureaddress, picturedescription)
+        VALUES (#{picturename}, #{picturetime}, #{pictureaddress}, #{picturedescription})
+    </insert>
+
+    <!--   select a picture by id   -->
+    <select id="getPicture" resultType="com.ricemarch.ricenokotomybatis.entity.Picture">
+        select id, pictureaddress, picturedescription, picturename, picturetime
+        from ricenokoto_mybatis.t_picture p
+        where p.id = #{id}
+    </select>
+
+    <!--    update a picture info include name,time,address by id   -->
+    <update id="updatePicture" parameterType="com.ricemarch.ricenokotomybatis.entity.Picture">
+        update ricenokoto_mybatis.t_picture
+        set picturename=#{picturename},
+            picturetime=#{picturetime},
+            pictureaddress=#{pictureaddress}
+        where id = #{id}
+    </update>
+
+    <!--    delete picture by id   -->
+    <delete id="deletePicture">
+        delete
+        from ricenokoto_mybatis.t_picture
+        where id = #{id}
+    </delete>
+
+</mapper>
