@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ricemarch.ricenokotomybatis.dao.FriendLinkDao">
+
+    <!--    list all friend links desc   -->
+    <select id="listFriendLink" resultType="com.ricemarch.ricenokotomybatis.entity.FriendLink">
+        select id, blogaddress, blogname, create_time, pictureaddress
+        from ricenokoto_mybatis.t_friend
+        order by t_friend.create_time desc
+    </select>
+
+    <!--    insert a new friend link   -->
+    <insert id="saveFriendLink" parameterType="com.ricemarch.ricenokotomybatis.entity.FriendLink">
+        insert into ricenokoto_mybatis.t_friend(blogname, blogaddress, pictureaddress, create_time)
+        VALUES (#{blogname}, #{blogaddress}, #{pictureaddress}, #{createTime})
+    </insert>
+
+    <!--    find a link by id   -->
+    <select id="getFriendLink" resultType="com.ricemarch.ricenokotomybatis.entity.FriendLink">
+        select id, blogaddress, blogname, create_time, pictureaddress
+        from ricenokoto_mybatis.t_friend
+        where id = #{id}
+    </select>
+
+
+    <!--    find a link by webUrl-->
+    <select id="getFriendLinkByBlogAddress" resultType="com.ricemarch.ricenokotomybatis.entity.FriendLink">
+        select id, blogaddress, blogname, create_time, pictureaddress
+        from ricenokoto_mybatis.t_friend
+        where pictureaddress = #{blogadress}
+    </select>
+
+    <!--    update a link by id   -->
+    <update id="updateFriendLink" parameterType="com.ricemarch.ricenokotomybatis.entity.FriendLink">
+        update ricenokoto_mybatis.t_friend
+        set blogname=#{blogname},
+            blogaddress=#{blogaddress},
+            pictureaddress=#{pictureaddress}
+        where id = #{id}
+    </update>
+
+    <!--    delete a link  -->
+    <delete id="deleteFriendLink">
+        delete
+        from ricenokoto_mybatis.t_friend
+        where id = #{id}
+    </delete>
+</mapper>

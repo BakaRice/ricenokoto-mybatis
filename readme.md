@@ -67,7 +67,7 @@
    - 博客和用户是多对一的关系：一个博客对应一个用户，一个用户可以对应多个博客
    - 博客和评论是一对多的关系：一个博客可以对应多个评论，一个评论对应一个博客
    - 评论和回复是一对多的关系： 一个评论可以对应多个回复，一个回复对应一个评论
-   
+
 #### 3. 实体属性
 + 博客属性：`Blog(标题，内容，首图，标记，浏览次数，赞赏开启，版权开启，是否发布，创建时间，更新时间，评论开启，描述)`
 + 分类属性：`Type(名称）`
@@ -190,3 +190,5 @@ create table t_blog
 2. `org.apache.ibatis.binding.BindingException: Invalid bound statement (not found)`
 ：[解决方案](https://blog.csdn.net/sundacheng1989/article/details/81630370)
 3. 发现Junit单元测试时，各Test方法之间不能直接使用成员变量进行共享，需要标注为static的类变量
+4. 整体设计存在很多缺陷 退化为jsp形态的设计了
+
